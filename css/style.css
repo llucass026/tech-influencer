@@ -1,6 +1,7 @@
 /* 
     DO NOT CHANGE THE CODE BELOW
 */
+
 body {
   font-family: Arial;
   background: #f1f1f1;
@@ -43,3 +44,77 @@ body {
 /* 
     START WRITING YOUR CSS CODE HERE
 */
+
+.header{
+  overflow: hidden;
+  background-color: darkblue;
+  padding: 5px;
+}
+
+.header a {
+  float: left;
+  color: #f1f1f1;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+
+.header-right{
+ float: right;
+ margin-top: 12px;
+}
+
+.header-right a:hover{
+  color: white;
+}
+
+.right-col{
+  float: left;
+  width: 25%;
+  background-color: silver;
+  padding-left: 20px;
+}
+
+.left-col {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  background-color: #BCF2F6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .header-right {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .left-col{
+    width: 100%
+  }
+
+  .right-col{
+    width: 100%;
+  }
+  .card{
+    font-size: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header .active {
+  color: red;
+}
